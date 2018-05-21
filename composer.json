@@ -1,0 +1,31 @@
+{
+    "name": "kielabokkie/laravel-ipdata",
+    "description": "Laravel wrapper for kielabokkie/ipdata-php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wouter Peschier",
+            "email": "kielabokkie@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "kielabokkie/ipdata": "^0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kielabokkie\\LaravelIpdata\\": "src/Kielabokkie/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kielabokkie\\LaravelIpdata\\IpdataServiceProvider"
+            ],
+            "aliases": {
+                "Ipdata": "Kielabokkie\\LaravelIpdata\\Facades\\Ipdata"
+            }
+        }
+    }
+}
