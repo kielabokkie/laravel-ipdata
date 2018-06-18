@@ -15,7 +15,7 @@ class IpdataServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/ipdata.php' => config_path('ipdata.php'),
+            __DIR__.'/../../config/ipdata.php' => config_path('ipdata.php'),
         ]);
     }
 
