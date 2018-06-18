@@ -14,7 +14,9 @@ class IpdataServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'/../config/ipdata.php' => config_path('ipdata.php'),
+        ]);
     }
 
     /**
@@ -25,7 +27,9 @@ class IpdataServiceProvider extends ServiceProvider
     public function register()
     {
         App::bind('ipdata', function () {
-            return new \Kielabokkie\Ipdata;
+            $apiKey = $this->app['config']->get('ipdata.api_key');
+
+            return new \Kielabokkie\Ipdata($apiKey);
         });
     }
 }
