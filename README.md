@@ -28,13 +28,16 @@ If you are on Laravel 5.4 or lower or don't use Laravel's auto discovery, you sh
 
 ## Config
 
-Next you'll have to copy the package config to your local config with the following command:
+Add the following to your `config/services.php` file:
 
-```shell
-php artisan vendor:publish --provider="Kielabokkie\LaravelIpdata\IpdataServiceProvider"
+```php
+// ...
+'ipdata' => [
+    'api_key' => env('IPDATA_API_KEY'),
+],
 ```
 
-Update your `.env` file with the API key you got from Ipdata:
+Update your `.env` file and enter the API key you got from Ipdata:
 
 ```
 IPDATA_API_KEY=youkeyhere
