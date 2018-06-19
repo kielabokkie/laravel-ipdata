@@ -1,4 +1,4 @@
-# Sentry for Laravel
+# Ipdata for Laravel
 
 Laravel wrapper for the [ipdata.co](https://ipdata.co) API.
 
