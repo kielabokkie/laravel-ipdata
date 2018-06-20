@@ -1,5 +1,9 @@
 # Ipdata for Laravel
 
+[![Author](http://img.shields.io/badge/by-@kielabokkie-lightgrey.svg?style=flat-square)](https://twitter.com/kielabokkie)
+[![Packagist Version](https://img.shields.io/packagist/v/kielabokkie/laravel-ipdata.svg?style=flat-square)](https://packagist.org/packages/kielabokkie/laravel-ipdata)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+
 Laravel wrapper for the [kielabokkie/ipdata-php](https://github.com/kielabokkie/ipdata-php) package which retrieves IP address information the using the [ipdata.co](https://ipdata.co) API.
 
 ## Prerequisites
